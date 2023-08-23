@@ -1,2 +1,1 @@
-cout<<"enter the number: ";
-    cin>>num;
+0
