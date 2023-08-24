@@ -1,5 +1,4 @@
-#include<iostream>
-#include<cmath>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
     int n,num,rem,sum=0;
@@ -8,7 +7,7 @@ int main(){
     cout<<"enter the number ";
     cin>>num;
     int x=num;
-    while(x>=1){
+    while(x>0){
         rem=x%10;
         sum=sum + pow(rem,n);
         x=x/10;
