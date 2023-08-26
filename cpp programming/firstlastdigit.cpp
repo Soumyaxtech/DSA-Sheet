@@ -14,7 +14,8 @@ if(num>0){
     }
         cout<<"the first digit of the number is "<<num<<endl;
         cout<<"the sum of first and last digit of a number is "<<rem+num<<endl;
-        
+        cout<<"the multiple of first and last digit of a number is "<<rem*num<<endl;
+
 
     return 0;
 }
