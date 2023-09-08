@@ -1,14 +1,15 @@
 #include<iostream>
 
 using namespace std;
-struct employ
+typedef struct employ
 {
     int id;
     float salary;
     char favchar;
-};
+}ep;
 int main(){
-    struct employ babai;
+    // struct employ
+     ep babai;
     babai.id=12356;
     babai.salary=56900.67;
     babai.favchar='A';
