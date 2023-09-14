@@ -57,21 +57,38 @@
 //     cout<<"the binary form of the decimal number is "<<a;
 //     return 0;
 // }
+// #include<iostream>
+
+// using namespace std;
+// int main(){
+//     int i,n,j;
+//     cout<<"enter the num of rows ";
+//     cin>>n;
+//     for(i=0;i<n;i++){
+//         for(j=0;j<i;j++){
+//             cout<<" ";
+//         }
+//         for(int k=n;k>i;k--){
+//             cout<<"*";
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
 #include<iostream>
 
 using namespace std;
 int main(){
-    int i,n,j;
-    cout<<"enter the num of rows ";
+    int a=0,b=1,c,n;
+    cout<<"enter the range ";
     cin>>n;
-    for(i=0;i<n;i++){
-        for(j=0;j<i;j++){
-            cout<<" ";
-        }
-        for(int k=n;k>i;k--){
-            cout<<"*";
-        }
-        cout<<endl;
+    // cout<<a<<endl;
+    // cout<<b<<endl;
+    for(int i=2;i<n;i++){
+        c=a+b;
+        a=b;
+        b=c;
     }
+     cout<<c<<endl;
     return 0;
 }
