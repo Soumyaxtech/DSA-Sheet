@@ -75,20 +75,36 @@
 //     }
 //     return 0;
 // }
-#include<iostream>
+// #include<iostream>
 
+// using namespace std;
+// int main(){
+//     int a=0,b=1,c,n;
+//     cout<<"enter the range ";
+//     cin>>n;
+//     // cout<<a<<endl;
+//     // cout<<b<<endl;
+//     for(int i=2;i<n;i++){
+//         c=a+b;
+//         a=b;
+//         b=c;
+//     }
+//      cout<<c<<endl;
+//     return 0;
+// }
+#include<iostream>
+#include<cmath>
 using namespace std;
 int main(){
-    int a=0,b=1,c,n;
-    cout<<"enter the range ";
+    int n,rem,sum=0;
+    cout<<"enter the number ";
     cin>>n;
-    // cout<<a<<endl;
-    // cout<<b<<endl;
-    for(int i=2;i<n;i++){
-        c=a+b;
-        a=b;
-        b=c;
+    int x=n;
+    while(x>0){
+        rem=x%10;
+        x=x/10;
+        sum=sum+rem;
     }
-     cout<<c<<endl;
+    cout<<"the sum of the digits are "<<sum;
     return 0;
 }
