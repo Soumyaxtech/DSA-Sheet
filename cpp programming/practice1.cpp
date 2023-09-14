@@ -41,19 +41,37 @@
 //     }
 //     return 0;
 // }
+// #include<iostream>
+
+// using namespace std;
+// int main(){
+//     int rem,num,a=0,b=1;
+//     cout<<"enter the number ";
+//     cin>>num;
+//     while(num>0){
+//         rem=num%2;
+//         num=num/2;
+//         a=a+(b*rem);
+//         b=b*10;
+//     }
+//     cout<<"the binary form of the decimal number is "<<a;
+//     return 0;
+// }
 #include<iostream>
 
 using namespace std;
 int main(){
-    int rem,num,a=0,b=1;
-    cout<<"enter the number ";
-    cin>>num;
-    while(num>0){
-        rem=num%2;
-        num=num/2;
-        a=a+(b*rem);
-        b=b*10;
+    int i,n,j;
+    cout<<"enter the num of rows ";
+    cin>>n;
+    for(i=0;i<n;i++){
+        for(j=(n-1);j>i;j--){
+            cout<<" ";
+        }
+        for(int k=0;k<=i;k++){
+            cout<<"*";
+        }
+        cout<<endl;
     }
-    cout<<"the binary form of the decimal number is "<<a;
     return 0;
 }
