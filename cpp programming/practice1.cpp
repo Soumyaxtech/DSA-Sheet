@@ -117,13 +117,17 @@ int main(){
     cin>>n;
     // char l=65;
     for(i=0;i<n;i++){
-        char l=65;
+        // char l=65;
+        // for(k=0;k<=i;k++){
+        //     cout<<l;
+        //     l++;
+        for(j=n-1;j>i;j--){
+            cout<<" ";
+        }
+         char l=65;
         for(k=0;k<=i;k++){
             cout<<l;
             l++;
-        }
-        for(j=n-1;j>i;j--){
-            cout<<" ";
         }
         cout<<endl;
     }
