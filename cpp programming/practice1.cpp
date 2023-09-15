@@ -92,19 +92,40 @@
 //      cout<<c<<endl;
 //     return 0;
 // }
+// #include<iostream>
+// #include<cmath>
+// using namespace std;
+// int main(){
+//     int n,rem,sum=0;
+//     cout<<"enter the number ";
+//     cin>>n;
+//     int x=n;
+//     while(x>0){
+//         rem=x%10;
+//         x=x/10;
+//         sum=sum+rem;
+//     }
+//     cout<<"the sum of the digits are "<<sum;
+//     return 0;
+// }
 #include<iostream>
-#include<cmath>
+
 using namespace std;
 int main(){
-    int n,rem,sum=0;
-    cout<<"enter the number ";
+    int i,j,k,n;
+    cout<<"enter the number of rows ";
     cin>>n;
-    int x=n;
-    while(x>0){
-        rem=x%10;
-        x=x/10;
-        sum=sum+rem;
+    // char l=65;
+    for(i=0;i<n;i++){
+        char l=65;
+        for(k=0;k<=i;k++){
+            cout<<l;
+            l++;
+        }
+        for(j=n-1;j>i;j--){
+            cout<<" ";
+        }
+        cout<<endl;
     }
-    cout<<"the sum of the digits are "<<sum;
     return 0;
 }
