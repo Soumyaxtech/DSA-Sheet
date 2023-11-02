@@ -18,20 +18,32 @@
 //     cout<<"the favchar of employ babai is "<<babai.favchar<<endl;
 //     return 0;
 // }
+// #include<iostream>
+
+// using namespace std;
+// struct rectangle
+// {
+//     int length,breadth;
+//     rectangle(int l,int b)
+//     {
+//         length=l;
+//         breadth=b;
+//     }
+// };
+// int main(){
+//     struct rectangle r(2,2);
+//         cout<<r.length*r.breadth<<endl;
+
+// }
 #include<iostream>
 
 using namespace std;
-struct rectangle
-{
-    int length,breadth;
-    rectangle(int l,int b)
-    {
-        length=l;
-        breadth=b;
-    }
+struct card{
+   int face;
+   int shape;
+   int color;
 };
 int main(){
-    struct rectangle r(2,2);
-        cout<<r.length*r.breadth<<endl;
-
+    struct card cr[52];
+    
 }
