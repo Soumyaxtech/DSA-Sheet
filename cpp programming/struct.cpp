@@ -45,5 +45,5 @@ struct card{
 };
 int main(){
     struct card cr[52];
-    
+    cout<<cr[0].face<<endl;
 }
