@@ -1,4 +1,10 @@
-cout<<"the value of arr is "<<*p<<endl;
-      cout<<"the value of arr is "<<*(p+1)<<endl;
-        cout<<"the value of arr is "<<*(p+2)<<endl;
-          cout<<"the value of arr is "<<*(p+3)<<endl;
+#include<iostream>
+// //accussing array element from heap memory by pointer
+// using namespace std;
+// int main(){
+//     int *p;
+//     p=new int[4];//here array elkements styored in heap memory
+//     p[0]=13;p[1]=14;p[2]=45;p[3]=15;
+//     for(int i=0;i<4;i++){
+//         cout<<p[i]<<endl;
+//     }
